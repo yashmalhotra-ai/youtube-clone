@@ -4,6 +4,7 @@ import { RANDOM_VIDEO_API } from '../Constant';
 import VideoCard from './VideoCard';
 import { Link } from 'react-router-dom';
 import CommentContainer from './CommentContainer';
+import ResCardShimmer from './Shimmer';
 const VideoPlayer = () => {
   // whenever we pass the data through the state in React Link then that state will be store inside location
 
@@ -83,7 +84,7 @@ const VideoPlayer = () => {
               <Link key={video.id.videoId} to={{ pathname: '/videoplayer', search: `?vid=${video.id.videoId}` }} state={{ info: video }} > <VideoCard info={video} /> </Link>
             ))
           ) : (
-            <p>Loading...</p>
+            <ResCardShimmer/>
           )}
         </div>
       </div>

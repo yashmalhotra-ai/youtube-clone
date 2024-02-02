@@ -4,6 +4,8 @@
 const GOOGLE_API2 = 'AIzaSyCnaGeC47S_Cr9yPNZp1famJVM7TWqkPFk'
 
 export const YOUTUBE_SEARCH_API = `&key=${GOOGLE_API2}`
+export const SHIMMER_IMAGE_URL =
+    "https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png";
 
 export const YOUTUBE_VIDEO_API = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${GOOGLE_API2}`
 
